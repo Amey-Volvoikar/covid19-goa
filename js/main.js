@@ -1,4 +1,7 @@
+const load = document.querySelector(".el-load");
+
 const api_url = "https://api.covid19india.org/data.json";
+
 async function getdata() {
   const res = await fetch(api_url);
   const data = await res.json();
@@ -11,4 +14,4 @@ async function getdata() {
   document.getElementById("lastupdatedtime").innerHTML = GA.lastupdatedtime;
 }
 
-getdata();
+if (load) load.addEventListener("onload", getdata());
