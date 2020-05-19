@@ -4,7 +4,7 @@ It is a minimal site that keeps track of covid19 related info in the satate of G
 
 ## Built With
 
-* [bootstrap](https://getbootstrap.com/) - The web framework used
+* [Bootstrap](https://getbootstrap.com/) - The web framework used
 * [API](https://api.covid19india.org/) - COVID19-India API
 
 ## Authors
