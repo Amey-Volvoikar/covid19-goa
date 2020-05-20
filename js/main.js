@@ -5,7 +5,8 @@ const api_url = "https://api.covid19india.org/data.json";
 async function getdata() {
   const res = await fetch(api_url);
   const data = await res.json();
-  const GA = data.statewise[27];
+  const GA = data.statewise[26];
+  // const x = data.statewise.filter((x) => x.statecode === "GA").map();
   console.log(GA);
   document.getElementById("active").innerHTML = GA.active;
   document.getElementById("confirmed").innerHTML = GA.confirmed;
